@@ -295,3 +295,62 @@ select concat('Booking ', cancel_bookingid, ' cancelled') as 'Confirmation';
 end //
 DELIMITER ;
 ```
+
+# Week 3
+
+Check the file [Data Visulization](./week%203/Data%20Visualization.twb)
+
+## Exercise: Set up the Tableau Workspace for data analysis
+
+### Task 1
+In this first task, you need to connect to Little Lemon data stored in the Excel Sheet called LittleLemonDB. Then filter data in the data source page and select the United States as the country.
+
+### Task 2
+In the second task, you need to create two new data fields called First Name and Last Name. Related values should be extracted from the Full Name field.
+
+
+### Task 3
+For your third task, you need to create a new data field that stores the profits for each sale, or order as shown in the screenshot below.
+
+Result example:
+
+![](./week%203/Spliting%20field%20and%20Calculated%20Field.png)
+
+## Exercise: Create interactive dashboard for sales and profits
+
+### Task 1
+In the first task, you need to create a bar chart that shows customers sales and filter data based on sales with at least $70.
+
+Result:
+
+![](./week%203/Customer%20Sales.png)
+
+### Task 2
+In the second task, you need to create a line chart to show the sales trend from 2019 to 2022. 
+
+![](./week%203/Profit%20Chart.png)
+
+### Task 3
+In the third task, you need to create a Bubble chart of sales for all customers. The chart should show the names of all customers. Once you roll over a bubble, the chart should show the name, profit and sale.
+
+(The filter condition is not given, here I just apply the condition that sales > 70)
+
+![](./week%203/Sales%20Bubble%20Chart.png)
+
+### Task 4
+In this task, you need to compare the sales of the three different cuisines sold at Little Lemon. Create a Bar chart that shows the sales of the Turkish, Italian and Greek cuisines.
+
+You need to display sales data for 2020, 2021, and 2022 only. Each bar should display the profit of each cuisine. 
+
+![](./week%203/Cuisine%20Sales%20and%20Profits.png)
+
+### Task 5
+In this final task, you need to create an interactive dashboard that combines the Bar chart called Customers sales and the Sales Bubble Chart. Once you click a bar, and roll over the related bubble, the name, sales and profit figures should be displayed in the Bubble chart as shown below.
+
+Result:
+
+![](./week%203/Interactive%20Dashboard.png)
+
+## Database Client
+
+Check the file [client](./week%203/client.ipynb)
