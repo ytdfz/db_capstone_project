@@ -1,8 +1,5 @@
-DROP PROCEDURE IF EXISTS CancelOrder;
-DELIMITER // 
-CREATE PROCEDURE CancelOrder(IN id INT)
-BEGIN
-DELETE FROM Orders WHERE OrderID = id;
-SELECT CONCAT('Order ', id, ' is cancelled') as 'Confirmation';
-END//
-DELIMITER ;  
+DROP PROCEDURE IF EXISTS GetMaxQuantity;
+
+CREATE PROCEDURE GetMaxQuantity()
+SELECT Quantity as 'Max Quantity In Order' FROM Orders
+ORDER BY DESC LIMIT 1;

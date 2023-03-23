@@ -1,0 +1,4 @@
+DROP PROCEDURE IF EXISTS ManageBooking;
+
+CREATE PROCEDURE ManageBooking()
+SELECT * FROM Bookings;
